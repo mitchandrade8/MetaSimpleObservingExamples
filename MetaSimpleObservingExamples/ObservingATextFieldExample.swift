@@ -17,6 +17,9 @@ struct ObservingATextFieldExample: View {
         .onChange(of: userInput, perform: { newValue in
             print(newValue)
         })
+        .onSubmit {
+            print("Submitted")
+        }
         .padding()
     }
 }
@@ -26,3 +29,4 @@ struct ObservingATextFieldExample_Previews: PreviewProvider {
         ObservingATextFieldExample()
     }
 }
+
